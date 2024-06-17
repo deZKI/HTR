@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Regular"), url("./assets/fonts/Montserrat-Regular.woff2") format("woff2"), url("./assets/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Medium"), url("./assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("./assets/fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Bold"), url("./assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("./assets/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --header-background:           #262626;
+  --navigation-background:       #363636;
+  --advantages-panel-background: #D9D9D9;
+  --footer-background:           #363636;
+  --news-button-background:      #2C2C2C;
+  --brands-button-background:    #1E1E1E;
+  --brands-divider-background:   #969696;
+  --primary-background:          #ffffff;
+  --secondary-background:        #000000;
+
+  --primary-color:               #000000;
+  --secondary-color:             #ffffff;
+
+  --releases-background:          linear-gradient(131.76deg, #2C2C2C -5.138%, #969696 150.908%);
+  --categories-background:        linear-gradient(131.76deg, #2C2C2C -6.57%, #969696 159.854%);
+
+  --zindex-dropdown:              1000;
+  --zindex-sticky:                1020;
+  --zindex-fixed:                 1030;
+  --zindex-modal-backdrop:        1040;
+  --zindex-modal:                 1050;
+  --zindex-popover:               1060;
+  --zindex-tooltip:               1070;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
