@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 70px 0;
+}
+
+.logo {
+  max-width: 140px;
+}
+
+.image {
+  width: 100%;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__media {
+  margin: 0 0 16px 0;
+}
+
+.help__title,
+.company__title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.contact__media__title,
+.contact__telegram__title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--primary-color);
+}
+
+.help__list,
+.company__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__media__list,
+.contact__telegram__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.help__link,
+.company__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: var(--primary-color);
+}
+
+.contact__media__link,
+.contact__telegram__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--advantages-background);
+}

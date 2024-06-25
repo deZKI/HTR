@@ -23,16 +23,17 @@
 }
 
 :root {
+  --primary-color:               #ffffff;
+  --secondary-color:             #000000;
+
   --header-background:           #262626;
   --navigation-background:       #363636;
-  --advantages-panel-background: #D9D9D9;
+  --advantages-background:       #D9D9D9;
   --footer-background:           #363636;
   --banner-button-background:    #2C2C2C;
   --brands-button-background:    #1E1E1E;
   --brands-divider-background:   #969696;
-
-  --primary-color:               #ffffff;
-  --secondary-color:             #000000;
+  --footer-divider-background:   #707070;
 
   --releases-background:          linear-gradient(131.76deg, #2C2C2C -5.138%, #969696 150.908%);
   --categories-background:        linear-gradient(131.76deg, #2C2C2C -6.57%, #969696 159.854%);
@@ -51,6 +52,7 @@ body {
 }
 
 * {
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

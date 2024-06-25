@@ -1,7 +1,6 @@
 import React from 'react';
 import './main.global.css';
 import {Header} from './components/Header';
-import {Navigation} from './components/Navigation';
 import {Banner} from './components/Banner';
 import {Brands} from './components/Brands';
 import {Releases} from './components/Releases/Releases';
@@ -13,7 +12,6 @@ function AppComponent() {
   return (
     <>
       <Header />
-      <Navigation />
       <Banner />
       <Brands />
       <Releases />

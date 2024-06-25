@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  width: 100%;
+  background: var(--categories-background);
+}
+
+.desc {
+  max-width: 182px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.image {
+  max-width: 78px;
+}
