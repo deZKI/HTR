@@ -1,0 +1,14 @@
+.banner__content {
+  width: 60%;
+  max-width: 755px;
+}
+
+.banner__content__image {
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .banner__content {
+    width: 100%;
+  }
+}

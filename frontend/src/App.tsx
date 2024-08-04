@@ -1,25 +1,9 @@
 import React from 'react';
 import './main.global.css';
-import {Header} from './components/Header';
-import {Banner} from './components/Banner';
-import {Brands} from './components/Brands';
-import {Releases} from './components/Releases/Releases';
-import {Advantages} from './components/Advantages';
-import {Categories} from './components/Categories';
-import {Footer} from './components/Footer';
+import MainPage from './pages/mainPage/MainPage';
 
-function AppComponent() {
+export default function AppComponent() {
   return (
-    <>
-      <Header />
-      <Banner />
-      <Brands />
-      <Releases />
-      <Advantages />
-      <Categories />
-      <Footer />
-    </>
+    <MainPage />
   );
 }
-
-export const App = () => <AppComponent />

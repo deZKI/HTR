@@ -1,0 +1,214 @@
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 70px 0;
+}
+
+.footer__logo {
+  max-width: 140px;
+}
+
+.footer__logo__image {
+  width: 100%;
+}
+
+.footer__details__title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.footer__details__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__details__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: var(--brands-divider-bg);
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__contacts__media {
+  margin: 0 0 16px 0;
+}
+
+.footer__contacts__media__info {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+}
+
+.footer__contacts__media__title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.footer__contacts__media__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__contacts__media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--advantages-bg);
+}
+
+.footer__contacts__payments {
+  display: none;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__contacts__payments__mir {
+  max-width: 85px;
+}
+
+.footer__contacts__payments__mir-image {
+  width: 100%;
+}
+
+.footer__contacts__payments__sfp {
+  max-width: 44px;
+}
+
+.footer__contacts__payments__sfp-image {
+  width: 100%;
+}
+
+.footer__contacts__info__title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-white);
+}
+
+.footer__contacts__info__content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__contacts__info__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--advantages-bg);
+}
+
+.footer__contacts__info__telegram {
+  display: flex;
+  flex-direction: column;
+  gap: 8px
+}
+
+.footer__contacts__info__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-white);
+}
+
+.footer__contacts__info__support {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: var(--brands-divider-bg);
+}
+
+.footer__payments {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__payments__mir {
+  max-width: 85px
+}
+
+.footer__payments__mir__image {
+  width: 100%;
+}
+
+.footer__payments__sfp {
+  max-width: 51px;
+}
+
+.footer__payments__sfp__image {
+  width: 100%;
+}
+
+@media (max-width: 946px) {
+  .footer__info {
+    margin: 0 0 40px 0;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__details__list {
+    gap: 8px;
+  }
+
+  .footer__company__list {
+    gap: 8px;
+  }
+
+  .footer__contacts__media__title {
+    display: none;
+  }
+
+  .footer__payments {
+    display: flex;
+  }
+}
+
+@media (max-width: 780px) {
+  .footer__info {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer__details__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer__contacts__media__title {
+    display: flex;
+  }
+
+  .footer__contacts__payments {
+    display: flex;
+  }
+
+  .footer__payments {
+    display: none;
+  }
+}

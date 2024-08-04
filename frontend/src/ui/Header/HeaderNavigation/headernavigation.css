@@ -1,0 +1,19 @@
+.header__navigation {
+  width: 100%;
+  background-color: var(--nav-bg);
+}
+
+.header__navigation__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  margin: 0 auto;
+  max-width: 1072px;
+}
+
+@media (max-width: 946px) {
+  .header__navigation {
+    display: none;
+  }
+}

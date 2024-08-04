@@ -23,22 +23,31 @@
 }
 
 :root {
-  --primary-color:               #ffffff;
-  --secondary-color:             #000000;
+  --color-white:                 #ffffff;
+  --color-black:                 #000000;
 
-  --header-background:           #262626;
-  --navigation-background:       #363636;
-  --advantages-background:       #D9D9D9;
-  --footer-background:           #363636;
-  --banner-button-background:    #2C2C2C;
-  --brands-button-background:    #1E1E1E;
-  --brands-divider-background:   #969696;
-  --footer-divider-background:   #707070;
+  --color-dark-gray:             #262626;
+  --color-medium-gray:           #363636;
+  --color-light-gray:            #D9D9D9;
+  --color-mid-light-gray:        #969696;
+  --color-mid-dark-gray:         #707070;
+  --color-banner-button-gray:    #2C2C2C;
+  --color-brands-button-gray:    #1E1E1E;
 
-  --releases-background:          linear-gradient(131.76deg, #2C2C2C -5.138%, #969696 150.908%);
-  --categories-background:        linear-gradient(131.76deg, #2C2C2C -6.57%, #969696 159.854%);
+  --header-bg:                   var(--color-dark-gray);
+  --nav-bg:                      var(--color-medium-gray);
+  --advantages-bg:               var(--color-light-gray);
+  --footer-bg:                   var(--color-medium-gray);
+  --banner-button-bg:            var(--color-banner-button-gray);
+  --brands-button-bg:            var(--color-brands-button-gray);
+  --brands-divider-bg:           var(--color-mid-light-gray);
+  --footer-divider-bg:           var(--color-mid-dark-gray);
+
+  --releases-bg:                 linear-gradient(131.76deg, var(--color-dark-gray) -5.138%, var(--color-mid-light-gray) 150.908%);
+  --categories-bg:               linear-gradient(131.76deg, var(--color-dark-gray) -6.57%, var(--color-mid-light-gray) 159.854%);
 
   --zindex-dropdown:              1000;
+  --zindex-dropdown-menu:         1100;
   --zindex-sticky:                1020;
   --zindex-fixed:                 1030;
   --zindex-modal-backdrop:        1040;

@@ -1,0 +1,7 @@
+.mainpage__divider {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1008px;
+  height: 1px;
+  background-color: var(--brands-divider-bg);
+}
