@@ -26,6 +26,7 @@
   --color-white:                 #ffffff;
   --color-black:                 #000000;
 
+  --color-dark:                  #000000b3;
   --color-dark-gray:             #262626;
   --color-medium-gray:           #363636;
   --color-light-gray:            #D9D9D9;
@@ -33,6 +34,7 @@
   --color-mid-dark-gray:         #707070;
   --color-banner-button-gray:    #2C2C2C;
   --color-brands-button-gray:    #1E1E1E;
+
 
   --header-bg:                   var(--color-dark-gray);
   --nav-bg:                      var(--color-medium-gray);

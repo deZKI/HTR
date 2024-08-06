@@ -93,6 +93,10 @@
   .header__info__actions__button-search {
     display: flex;
   }
+
+  .header__info__actions__button-cabinet {
+    display: none;
+  }
 }
 
 @media (max-width: 780px) {

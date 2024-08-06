@@ -58,10 +58,10 @@ export default function FooterInfo() {
             </ul>
             <div className="footer__contacts__payments">
               <div className="footer__contacts__payments__mir">
-                <img className="footer__contacts__payments__mir-image" src={MIRImage} alt="МИР" />
+                <img className="footer__contacts__mir__image" src={MIRImage} alt="МИР" />
               </div>
               <div className="footer__contacts__payments__sfp">
-                <img className="footer__contacts__payments__sfp-image" src={SFPImage} alt="СБП" />
+                <img className="footer__contacts__sfp__image" src={SFPImage} alt="СБП" />
               </div>
             </div>
           </div>
