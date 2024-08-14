@@ -1,11 +1,31 @@
-version: '3.3'
-
 services:
+  core:
+    build: server
+    volumes:
+      - static_volume:/app/static/
+      - media_volume:/app/media/
+    entrypoint: [ "sh", "entrypoint.sh" ]
+    ports:
+      - "8000"
+    env_file:
+      - .env
+    depends_on:
+      - postgres_db
+    environment:
+      - POSTGRES_HOST=postgres_db
+
   frontend:
     build: frontend
     volumes:
       - frontend-build_volume:/app/build
     command: npm run build --prod
+
+  postgres_db:
+    image: postgres:16
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
   nginx:
     build: ./nginx
@@ -13,9 +33,14 @@ services:
     ports:
       - "80:80"
     volumes:
+      - static_volume:/app/static
+      - media_volume:/app/media
       - frontend-build_volume:/usr/share/nginx/html
     depends_on:
       - frontend
 
 volumes:
   frontend-build_volume:
+  postgres_data:
+  static_volume:
+  media_volume:
