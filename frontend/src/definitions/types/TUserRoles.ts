@@ -1,0 +1,1 @@
+export type TUserRoles = "region_rep" | "fsp_rep" | null

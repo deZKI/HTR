@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat-Regular"), url("./assets/fonts/Montserrat-Regular.woff2") format("woff2"), url("./assets/fonts/Montserrat-Regular.woff") format("woff");
@@ -22,42 +26,6 @@
   font-display: swap;
 }
 
-:root {
-  --color-white:                 #ffffff;
-  --color-black:                 #000000;
-
-  --color-dark:                  #000000b3;
-  --color-dark-gray:             #262626;
-  --color-medium-gray:           #363636;
-  --color-light-gray:            #D9D9D9;
-  --color-mid-light-gray:        #969696;
-  --color-mid-dark-gray:         #707070;
-  --color-banner-button-gray:    #2C2C2C;
-  --color-brands-button-gray:    #1E1E1E;
-
-
-  --header-bg:                   var(--color-dark-gray);
-  --nav-bg:                      var(--color-medium-gray);
-  --advantages-bg:               var(--color-light-gray);
-  --footer-bg:                   var(--color-medium-gray);
-  --banner-button-bg:            var(--color-banner-button-gray);
-  --brands-button-bg:            var(--color-brands-button-gray);
-  --brands-divider-bg:           var(--color-mid-light-gray);
-  --footer-divider-bg:           var(--color-mid-dark-gray);
-
-  --releases-bg:                 linear-gradient(131.76deg, var(--color-dark-gray) -5.138%, var(--color-mid-light-gray) 150.908%);
-  --categories-bg:               linear-gradient(131.76deg, var(--color-dark-gray) -6.57%, var(--color-mid-light-gray) 159.854%);
-
-  --zindex-dropdown:              1000;
-  --zindex-dropdown-menu:         1100;
-  --zindex-sticky:                1020;
-  --zindex-fixed:                 1030;
-  --zindex-modal-backdrop:        1040;
-  --zindex-modal:                 1050;
-  --zindex-popover:               1060;
-  --zindex-tooltip:               1070;
-}
-
 body {
   margin: 0;
 }
@@ -65,8 +33,6 @@ body {
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 ul {
