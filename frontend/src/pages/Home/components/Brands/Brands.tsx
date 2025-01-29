@@ -1,6 +1,7 @@
 import BrandImage from "@/assets/images/logo.png";
+import {FC} from "react";
 
-function Brands() {
+const Brands: FC = () => {
   return (
     <section className="w-full">
       <div className="flex flex-col justify-center items-center px-8 pt-16 pb-6 mx-auto max-w-[1072px] md:pt-10">
@@ -23,15 +24,15 @@ function Brands() {
             </li>
             <li className="shrink-0">
               <button className="flex flex-col justify-center items-center gap-4 p-4 w-[130px] h-[130px] bg-black">
-                  <span className="text-base font-medium leading-5 text-white text-center">
-                    Другие бренды
-                  </span>
+                <span className="text-base font-medium leading-5 text-white text-center">
+                  Другие бренды
+                </span>
                 <span className="flex justify-center items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path d="M10 0V20" stroke="white"/>
-                      <path d="M0 10H20" stroke="white"/>
-                    </svg>
-                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 0V20" stroke="white"/>
+                    <path d="M0 10H20" stroke="white"/>
+                  </svg>
+                </span>
               </button>
             </li>
           </ul>

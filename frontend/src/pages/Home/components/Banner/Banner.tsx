@@ -1,6 +1,7 @@
 import BannerImage from "@/assets/images/banner.png";
+import {FC} from "react";
 
-function Banner() {
+const Banner: FC = () => {
   return (
     <section className="w-full shadow-[0_4px_50px_rgba(0,0,0,0.25)]">
       <div className="flex justify-between items-center px-7 py-2.5 mx-auto max-w-[1440px] lg:px-7 lg:py-2.5 flex-wrap md:flex-nowrap">

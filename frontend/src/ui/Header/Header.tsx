@@ -4,21 +4,21 @@ function Header() {
   return (
     <header className="sticky top-0 w-full z-20">
       <div className="w-full bg-neutral-800">
-        <div className="flex items-center px-8 py-5 max-w-[1072px] mx-auto">
-          <button className="hidden justify-center items-center mr-8 lg:flex lg:mr-0 lg:hidden:!flex">
+        <div className="flex items-center px-8 py-3 max-w-[1072px] mx-auto">
+          <button className="flex justify-center items-center mr-8 lg:mr-0 lg:hidden">
             <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 20.5H29" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M11 14.5H29" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M11 26.5H29" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
-          <a className="flex justify-center items-center w-[50px] mr-8 lg:mr-0" href="/">
+          <a className="lg:flex justify-center items-center w-[50px] mr-8 lg:mr-0 lg:hidden:!flex hidden" href="/frontend/public">
             <img className="w-full" src={LogoImage} alt="логотип" />
           </a>
-          <form className="w-[550px] h-10 hidden lg:block ml-auto">
+          <form className="w-[550px] hidden lg:flex ml-auto">
             <label className="relative block w-full h-full">
               <input
-                className="w-full h-fullpx-3 py-2 text-base leading-5 font-normal outline outline-1 outline-white bg-transparent text-white placeholder:text-white placeholder:opacity-75"
+                className="w-full h-fullpx-3 p-2 text-base leading-5 font-normal outline outline-1 outline-white bg-transparent text-white placeholder:text-white placeholder:opacity-75"
                 type="text"
                 placeholder="Поиск"
               />
@@ -51,29 +51,15 @@ function Header() {
         </div>
       </div>
       <div className="w-full bg-neutral-700 hidden lg:block">
-        <div className="flex justify-center items-center px-8 py-4 mx-auto max-w-[1072px]">
+        <div className="flex justify-center items-center px-8 py-3 mx-auto max-w-[1072px]">
           <ul className="flex justify-between items-center w-full">
-            <li>
-              <a className="text-sm font-medium leading-4 text-white" href="/">Новые поступления</a>
-            </li>
-            <li>
-              <a className="text-sm font-medium leading-4 text-white" href="/">Бейсболки</a>
-            </li>
-            <li>
-              <a className="text-sm font-medium leading-4 text-white" href="/">Шапки</a>
-            </li>
-            <li>
-              <a className="text-sm font-medium leading-4 text-white" href="/">Команды</a>
-            </li>
-            <li>
-              <a className="text-sm font-medium leading-4 text-white" href="/">Бренды</a>
-            </li>
-            <li>
-              <a className="text-sm font-medium leading-4 text-white" href="/">Эксклюзивы</a>
-            </li>
-            <li>
-              <a className="text-sm font-medium leading-4 text-white" href="/">Распродажа</a>
-            </li>
+            <li><a className="text-sm font-medium leading-4 text-white" href="/">Новые поступления</a></li>
+            <li><a className="text-sm font-medium leading-4 text-white" href="/baseball-caps">Бейсболки</a></li>
+            <li><a className="text-sm font-medium leading-4 text-white" href="/">Шапки</a></li>
+            <li><a className="text-sm font-medium leading-4 text-white" href="/">Команды</a></li>
+            <li><a className="text-sm font-medium leading-4 text-white" href="/">Бренды</a></li>
+            <li><a className="text-sm font-medium leading-4 text-white" href="/">Эксклюзивы</a></li>
+            <li><a className="text-sm font-medium leading-4 text-white" href="/">Распродажа</a></li>
           </ul>
         </div>
       </div>

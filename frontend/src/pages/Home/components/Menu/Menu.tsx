@@ -2,8 +2,9 @@ import YankeesImage from "@/assets/images/yankees.png";
 import LogoImage from "@/assets/images/logo.png";
 import CapsImage from "@/assets/images/caps.png";
 import NikeImage from "@/assets/images/nike.png";
+import {FC} from "react";
 
-function Menu() {
+const Menu: FC = () => {
   return (
     <div className="fixed inset-0 w-full h-full bg-black/70 z-[1040] transition-all duration-300 ease-in-out">
       <div className="fixed top-0 left-0 w-full max-w-[440px] px-4 pb-4 bg-white z-[1050]">
