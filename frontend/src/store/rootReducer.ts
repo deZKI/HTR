@@ -1,8 +1,8 @@
 import {combineReducers} from '@reduxjs/toolkit';
-import themeSlice from "@/features/Theme/themeSlice";
+import filtersSlice from "@/pages/BaseballCaps/components/Filters/filters.ts";
 
 const rootReducer = combineReducers({
-  theme: themeSlice,
+  filters: filtersSlice
 });
 
 export default rootReducer;

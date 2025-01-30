@@ -1,31 +1,26 @@
 import {FC} from "react";
-
-type DropdownListItem = {
-  label: string;
-  value: string;
-  className?: string;
-};
+import type {TDropdownListItem} from "@/definitions/types/TDropdownListItem.ts";
 
 type TProps = {
-  selectedType: string | null;
-  items: DropdownListItem[];
   isOpen: boolean;
-  setSelectedType: (type: string | null) => void;
-  setIsOpen: (isOpen: boolean) => void;
-  containerClass?: string;
+  items: TDropdownListItem[];
+  selectedType: string | null;
   listClass?: string;
   itemClass?: string;
+  containerClass?: string;
+  setIsOpen: (isOpen: boolean) => void;
+  setSelectedType: (type: string | null) => void;
 };
 
 const DropdownList: FC<TProps> = ({
-  selectedType,
-  items,
   isOpen,
-  setSelectedType,
-  setIsOpen,
-  containerClass = "",
+  items,
+  selectedType,
   listClass = "",
   itemClass = "",
+  containerClass = "",
+  setIsOpen,
+  setSelectedType,
 }) => {
   const handleItemClick = (value: string) => {
     if (isOpen) {
@@ -48,9 +43,9 @@ const DropdownList: FC<TProps> = ({
       <ul className={listClass}>
         {items.map((item) => (
           <li
-            key={item.value}
             className={`${itemClass} ${selectedType === item.value ? "bg-gray-200" : ""}`}
             onClick={() => handleItemClick(item.value)}
+            key={item.value}
           >
             {item.label}
           </li>
