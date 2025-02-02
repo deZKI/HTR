@@ -1,13 +1,12 @@
 import {FC} from "react";
 import AboutImage from "../../../../assets/images/about.png";
+import PrimaryTitle from "@/ui/PrimaryTitle/PrimaryTitle.tsx";
 
 const About: FC = () => {
   return (
     <section className="w-full">
       <div className="flex flex-col justify-start items-start px-8 py-16 mx-auto max-w-[1072px] md:py-10">
-        <h3 className="mb-6 text-2xl font-medium leading-[29px] text-black uppercase md:mb-4 md:text-base md:leading-5">
-          О компании
-        </h3>
+        <PrimaryTitle text="О компании" />
         <div className="flex items-center gap-6">
           <div className="max-w-[320px] w-full">
             <img src={AboutImage} alt="о нас"/>

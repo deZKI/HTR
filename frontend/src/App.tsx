@@ -1,14 +1,16 @@
+import {FC} from "react";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import BaseballCaps from "@/pages/BaseballCaps/BaseballCaps.tsx";
+import BaseballcapDetails from "@/pages/BaseballcapDetails/BaseballcapDetails.tsx";
+import Baseballcaps from "@/pages/Baseballcaps/Baseballcaps.tsx";
 import Home from "@/pages/Home/Home.tsx";
-import React from "react";
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/baseball-caps" element={<BaseballCaps />} />
+        <Route path="/baseball-caps" element={<Baseballcaps />} />
+        <Route path="/baseball-caps/:id" element={<BaseballcapDetails />} />
       </Routes>
     </Router>
   )

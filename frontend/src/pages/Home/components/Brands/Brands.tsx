@@ -1,4 +1,7 @@
-import BrandImage from "@/assets/images/logo.png";
+import Brand1Image from "@/assets/images/brand1.png";
+import Brand2Image from "@/assets/images/brand2.png";
+import Brand3Image from "@/assets/images/brand3.png";
+import Brand4Image from "@/assets/images/brand4.png";
 import {FC} from "react";
 
 const Brands: FC = () => {
@@ -8,18 +11,26 @@ const Brands: FC = () => {
         <h3 className="mb-8 text-2xl font-medium leading-[29px] text-black text-center md:mb-6 md:text-base md:leading-5">
           Покупайте кепки в магазине HTR - Самые крутые кепки только у нас!
         </h3>
-        <div className="w-full overflow-hidden">
-          <ul className="flex justify-between items-center w-full overflow-x-auto gap-8 scrollbar-hide md:gap-8">
-            {[...Array(5)].map((_, i) => (
-              <li key={i} className="shrink-0">
-                <a className="flex justify-center items-center w-[70px]" href="/">
-                  <img className="w-full" src={BrandImage} alt="бренд"/>
-                </a>
-              </li>
-            ))}
+        <div className="w-full">
+          <ul className="flex justify-center items-center w-full overflow-x-auto gap-8 scrollbar-hide md:gap-8">
             <li className="shrink-0">
-              <a className="flex justify-center items-center w-[70px]" href="/">
-                <img className="w-full" src={BrandImage} alt=""/>
+              <a className="flex justify-center items-center w-[130px]" href="/">
+                <img className="w-full" src={Brand1Image} alt="бренд"/>
+              </a>
+            </li>
+            <li className="shrink-0">
+              <a className="flex justify-center items-center w-[130px]" href="/">
+                <img className="w-full" src={Brand2Image} alt="бренд"/>
+              </a>
+            </li>
+            <li className="shrink-0">
+              <a className="flex justify-center items-center w-[130px]" href="/">
+                <img className="w-full" src={Brand3Image} alt="бренд"/>
+              </a>
+            </li>
+            <li className="shrink-0">
+              <a className="flex justify-center items-center w-[130px]" href="/">
+                <img className="w-full" src={Brand4Image} alt="бренд"/>
               </a>
             </li>
             <li className="shrink-0">

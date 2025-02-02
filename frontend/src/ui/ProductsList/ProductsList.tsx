@@ -1,25 +1,21 @@
 import {FC} from "react";
-import Product from "@/ui/Product/Product.tsx";
+import SecondaryTitle from "@/ui/SecondaryTitle/SecondaryTitle.tsx";
 import type {TProduct} from "@/definitions/types/TProduct.ts";
+import Product from "@/ui/Product/Product.tsx";
 
 type TProps = {
   products: TProduct[];
+  titleIsActive: boolean;
 }
 
-const ProductsList: FC<TProps> = ({ products }) => {
+const ProductsList: FC<TProps> = ({ products, titleIsActive }) => {
   return (
     <section className="w-full">
-      <div className="flex justify-between mx-auto max-w-[1072px] p-8">
+      <div className="flex flex-col mx-auto max-w-[1072px] p-8">
+        {titleIsActive && <SecondaryTitle text="Рекомендации" />}
         <ul className="flex flex-grow flex-wrap gap-6">
           {products.map((product) =>
-            <Product
-              image={product.image}
-              brand={product.brand}
-              name={product.name}
-              price={product.price}
-              colors={product.colors}
-              key={product.id}
-            />
+            <Product product={product} />
           )}
         </ul>
       </div>

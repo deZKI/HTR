@@ -1,12 +1,12 @@
 import {FC, useState} from "react";
-import {setForm, setBrand, setColor, setLeague, setCollection,} from "@/pages/BaseballCaps/components/Filters/filters.ts";
+import {setForm, setBrand, setColor, setLeague, setCollection,} from "@/pages/Baseballcaps/components/Filters/filters.ts";
+import ChosenFilterButton from "@/ui/ChosenFilterButton/ChosenFilterButton.tsx";
 import DropdownButton from "@/ui/DropdownButton/DropdownButton.tsx";
 import DropdownList from "@/ui/DropdownList/DropdownList.tsx";
 import {useAppDispatch} from "@/hooks/useAppDispatch.ts";
 import Dropdown from "@/ui/Dropdown/Dropdown.tsx";
 import {RootState} from "@/store/store.ts";
 import {useSelector} from "react-redux";
-import ChosenFilterButton from "@/ui/ChosenFilterButton/ChosenFilterButton.tsx";
 
 const Filters: FC = () => {
   const form = useSelector((state: RootState) => state.filters.form);
@@ -18,9 +18,8 @@ const Filters: FC = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dispatch = useAppDispatch();
 
-  const toggleDropdown = (dropdownName: string) => {
+  const toggleDropdown = (dropdownName: string) =>
     setOpenDropdown((prev) => (prev === dropdownName ? null : dropdownName));
-  };
 
   const items = [
     { label: "Option 1", value: "option1" },
