@@ -1,5 +1,6 @@
 import {FC} from "react";
 import type {TProduct} from "@/definitions/types/TProduct.ts";
+import {formatPrice} from "@/lib/utils.ts";
 
 type TProps = {
   product: TProduct;
@@ -40,13 +41,13 @@ const ProductInfo: FC<TProps> = ({ product }) => {
       </div>
       <div className="flex justify-between">
         <div className="flex gap-1.5">
-          <span className="text-sm font-medium leading-[17px] text-[#969696]">Размер</span>
+          <span className="text-sm font-medium leading-[17px] text-[#969696]">Размер:</span>
           <span className="text-sm font-medium leading-[17px] text-[#000000]">{product.size}</span>
         </div>
         <button className="text-sm font-medium leading-[17px] text-[#969696]">Таблица размеров</button>
       </div>
       <div className="text-[32px] font-medium leading-[39px]">
-        {product.price} ₽
+        {formatPrice(product.price)} ₽
       </div>
       <div className="flex gap-2">
         <button className="flex justify-center items-center px-6 py-4 w-full text-base font-medium leading-5 text-white bg-[#2C2C2C]">Добавить в корзину</button>

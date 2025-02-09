@@ -14,7 +14,6 @@ const Filters: FC = () => {
   const color = useSelector((state: RootState) => state.filters.color);
   const league = useSelector((state: RootState) => state.filters.league);
   const collection = useSelector((state: RootState) => state.filters.collection);
-
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dispatch = useAppDispatch();
 
@@ -37,7 +36,7 @@ const Filters: FC = () => {
             button={
               <DropdownButton
                 text="Форма"
-                containerClass="flex justify-center items-center gap-4 px-4 py-4 border border-solid border-[#969696] text-sm font-medium leading-[17px] text-black"
+                containerClass="flex justify-between items-center gap-4 px-4 py-4 border border-solid border-[#969696] min-w-[110px] text-sm font-medium leading-4 text-black"
                 selectedType={form}
               />
             }
@@ -63,7 +62,7 @@ const Filters: FC = () => {
             button={
               <DropdownButton
                 text="Бренд"
-                containerClass="flex justify-center items-center gap-4 px-4 py-4 border border-solid border-[#969696] text-sm font-medium leading-[17px] text-black"
+                containerClass="flex justify-between items-center gap-4 px-4 py-4 border border-solid border-[#969696] min-w-[110px] text-sm font-medium leading-4 text-black"
                 selectedType={brand}
               />
             }
@@ -89,7 +88,7 @@ const Filters: FC = () => {
             button={
               <DropdownButton
                 text="Цвет"
-                containerClass="flex justify-center items-center gap-4 px-4 py-4 border border-solid border-[#969696] text-sm font-medium leading-[17px] text-black"
+                containerClass="flex justify-between items-center gap-4 px-4 py-4 border border-solid border-[#969696] min-w-[110px] text-sm font-medium leading-4 text-black"
                 selectedType={color}
               />
             }
@@ -115,7 +114,7 @@ const Filters: FC = () => {
             button={
               <DropdownButton
                 text="Лига и команда"
-                containerClass="flex justify-center items-center gap-4 px-4 py-4 border border-solid border-[#969696] text-sm font-medium leading-[17px] text-black"
+                containerClass="flex justify-between items-center gap-4 px-4 py-4 border border-solid border-[#969696] min-w-[110px] text-sm font-medium leading-4 text-black"
                 selectedType={league}
               />
             }
@@ -141,7 +140,7 @@ const Filters: FC = () => {
             button={
               <DropdownButton
                 text="Коллекция"
-                containerClass="flex justify-center items-center gap-4 px-4 py-4 border border-solid border-[#969696] text-sm font-medium leading-[17px] text-black"
+                containerClass="flex justify-between items-center gap-4 px-4 py-4 border border-solid border-[#969696] min-w-[110px] text-sm font-medium leading-4 text-black"
                 selectedType={collection}
               />
             }
@@ -167,7 +166,7 @@ const Filters: FC = () => {
             button={
               <DropdownButton
                 text="Сортировка"
-                containerClass="flex justify-center items-center gap-4 px-4 py-4 text-sm font-medium leading-[17px] text-black bg-[#D9D9D9]"
+                containerClass="flex justify-between items-center gap-4 px-4 py-4 text-sm font-medium leading-4 text-black bg-[#D9D9D9]"
                 selectedType={null}
               />
             }
@@ -194,11 +193,11 @@ const Filters: FC = () => {
             {Array.from(Array(4).keys()).map(() =>
               <ChosenFilterButton
                 text="New Era"
-                containerClass="flex justify-center items-center gap-4 px-4 py-4 text-sm font-medium leading-[17px] text-black bg-[#D9D9D9]"
+                containerClass="flex justify-between items-center gap-4 px-4 py-4 text-sm font-medium leading-4 text-black bg-[#D9D9D9]"
               />
             )}
           </ul>
-          <button className="flex justify-center items-center text-sm font-medium leading-[17px] text-[#969696] underline">
+          <button className="flex justify-between items-center text-sm font-medium leading-4 text-[#969696] underline">
             Сбросить фильтр
           </button>
         </div>

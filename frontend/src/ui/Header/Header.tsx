@@ -1,4 +1,5 @@
 import LogoImage from "@/assets/images/logo.png";
+import {Link} from "react-router-dom";
 
 function Header() {
   return (
@@ -41,12 +42,12 @@ function Header() {
                 <path d="M17.5833 6.25165H15.4167C15.4167 3.10165 13.0333 0.626648 10 0.626648C6.96667 0.626648 4.58333 3.10165 4.58333 6.25165H2.41667C1.225 6.25165 0.25 7.26415 0.25 8.50165V22.0016C0.25 23.2391 1.225 24.2516 2.41667 24.2516H17.5833C18.775 24.2516 19.75 23.2391 19.75 22.0016V8.50165C19.75 7.26415 18.775 6.25165 17.5833 6.25165ZM10 2.87665C11.8417 2.87665 13.25 4.33915 13.25 6.25165H6.75C6.75 4.33915 8.15833 2.87665 10 2.87665ZM17.5833 22.0016H2.41667V8.50165H17.5833V22.0016ZM10 13.0016C8.15833 13.0016 6.75 11.5391 6.75 9.62665H4.58333C4.58333 12.7766 6.96667 15.2516 10 15.2516C13.0333 15.2516 15.4167 12.7766 15.4167 9.62665H13.25C13.25 11.5391 11.8417 13.0016 10 13.0016Z" fill="white"/>
               </svg>
             </button>
-            <button className="hidden lg:flex justify-center items-center w-10 h-10">
+            <Link className="hidden lg:flex justify-center items-center w-10 h-10" to="/account">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
                 <path d="M30 31.5V28.8333C30 27.4188 29.4732 26.0623 28.5355 25.0621C27.5979 24.0619 26.3261 23.5 25 23.5H15C13.6739 23.5 12.4021 24.0619 11.4645 25.0621C10.5268 26.0623 10 27.4188 10 28.8333V31.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M20 18.5C22.7614 18.5 25 16.2614 25 13.5C25 10.7386 22.7614 8.5 20 8.5C17.2386 8.5 15 10.7386 15 13.5C15 16.2614 17.2386 18.5 20 18.5Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

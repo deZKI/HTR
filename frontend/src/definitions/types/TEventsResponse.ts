@@ -1,4 +1,4 @@
-import {EventStatus} from "@/definitions/enums/EventStatus";
+import {EEventStatus} from "@/definitions/enums/EEventStatus.ts";
 
 export type TEvent = {
   id: number;
@@ -13,7 +13,7 @@ export type TEvent = {
   sport: string;
   min_age: number;
   max_age: number;
-  status: EventStatus;
+  status: EEventStatus;
 }
 
 export type PaginatedResponse<T> = {

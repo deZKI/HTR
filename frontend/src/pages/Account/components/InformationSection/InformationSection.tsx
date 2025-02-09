@@ -1,22 +1,16 @@
 import {FC} from "react";
-import ProductsList from "@/pages/BaseballcapDetails/components/ProductsList/ProductsList.tsx";
-import DetailsCard from "@/pages/BaseballcapDetails/components/DetailsCard/DetailsCard.tsx";
+import ProductsSlider from "@/pages/Account/components/ProductsSlider/ProductsSlider.tsx";
+import ProductsList from "@/pages/Account/components/ProductsList/ProductsList.tsx";
+import UserInfo from "@/pages/Account/components/UserInfo/UserInfo.tsx";
 import type {TProduct} from "@/definitions/types/TProduct.ts";
 import BrandImage from "@/assets/images/new-era-logo.png";
-import {useAppSelector} from "@/hooks/useAppSelector.ts";
 import Pagination from "@/ui/Pagination/Pagination.tsx";
-import Navigation from "@/ui/Navigation/Navigation.tsx";
 import {generateRandomString} from "@/lib/utils.ts";
 import Cap2Image from "@/assets/images/cap-1-1.png";
 import Cap3Image from "@/assets/images/cap-1-2.png";
 import Cap1Image from "@/assets/images/cap-1.png";
-import Header from "@/ui/Header/Header.tsx";
-import Footer from "@/ui/Footer/Footer.tsx";
-import {RootState} from "@/store/store.ts";
 
-const BaseballcapDetails: FC = () => {
-  const items = [{ name: 'Главная страница', link: '/' }, { name: 'Бейсболки', link: '/baseball-caps' }, { name: 'Kids New York Yankees'}];
-  const product = useAppSelector((state: RootState) => state.product);
+const InformationSection: FC = () => {
   const products: TProduct[] = Array.from({ length: 24 }, () => ({
     id: generateRandomString(),
     color: "Синий",
@@ -32,15 +26,13 @@ const BaseballcapDetails: FC = () => {
   }));
 
   return (
-    <>
-      <Header />
-      <Navigation items={items} />
-      <DetailsCard product={product} />
-      <ProductsList products={products} />
-      <Pagination itemsViewed={12} totalItems={59} />
-      <Footer />
-    </>
+    <div className="flex flex-col gap-10  w-full max-w-[704px]">
+      <UserInfo />
+      <ProductsSlider products={products} />
+      <ProductsList products={products}/>
+      <Pagination itemsViewed={12} totalItems={59}/>
+    </div>
   );
 }
 
-export default BaseballcapDetails;
+export default InformationSection;

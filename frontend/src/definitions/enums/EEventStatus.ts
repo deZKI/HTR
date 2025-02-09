@@ -1,4 +1,4 @@
-export enum EventStatus {
+export enum EEventStatus {
     Pending = "pending",
     Planned = "planned",
     Approved = "approved",

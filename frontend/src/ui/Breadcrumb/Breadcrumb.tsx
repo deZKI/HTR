@@ -16,10 +16,10 @@ const Breadcrumb: FC<TProps> = ({ items }) => {
           return (
             <li className="flex items-center gap-1" key={index}>
               {isLast
-                ? <span className="text-sm font-bold leading-[17px] text-[#363636]">{item.name}</span>
+                ? <span className="text-base font-bold leading-[17px] text-[#363636]">{item.name}</span>
                 : item.link
-                  ? <Link className="text-sm font-bold leading-[17px] text-[#969696]" to={item.link}>{item.name}</Link>
-                  : <span className="text-sm font-bold leading-[17px] text-[#363636]">{item.name}</span>
+                  ? <Link className="text-base font-bold leading-[17px] text-[#969696]" to={item.link}>{item.name}</Link>
+                  : <span className="text-base font-bold leading-[17px] text-[#363636]">{item.name}</span>
               }
               {!isLast && <span className="text-sm font-bold leading-[17px] text-[#969696]">/</span>}
             </li>
